@@ -1,0 +1,36 @@
+mixin header()
+  +b.HEADER.header
+    +b.SECTION.option
+      .container
+
+        +b.options-left
+          +e.A(href="#").item Support
+          +e.A(href="#").item Delivey
+          +e.A(href="#").item Legal
+          +e.A(href="#").item About Us
+
+        +b.options-right
+          +e.item
+            +e.SPAN.cost $465.00
+            +e.SPAN.items 4 items
+          +e.login Login
+          +e.register Register
+     
+    +b.SECTION.menu
+      .container
+        +b.logo
+          +e.IMG(src='../../../assets/images/logo.png').logo
+        
+        +b.nav
+          +e.A(href="#").item Home
+          +e.A(href="#").item Men
+          +e.A(href="#").item Women
+          +e.A(href="#").item Childred
+          +e.A(href="#").item Baby
+          +e.A(href="#").item Our Brands
+          +e.A(href="#").item Sales
+
+        +b.nav-button
+          +e.SPAN.line
+          +e.SPAN.line
+          +e.SPAN.line

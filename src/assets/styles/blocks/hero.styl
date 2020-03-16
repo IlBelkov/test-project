@@ -1,0 +1,54 @@
+.hero
+  background-color #f0efee
+
+  &:after
+    content ''
+    width 969px
+    height 727px
+    background url('../images/sneaker.png') no-repeat 100% 100%
+    top 40px
+    left -50px
+    z-index 99
+    position absolute
+
+  .container
+    height 600px
+    padding-right 140px
+    display flex 
+    flex-direction row-reverse
+    align-items center
+    position relative
+
+.hero-block
+  
+  &__cost
+    color redColor
+    font-family TruenoLt
+    font-size 30px
+  
+  &__title
+    color redColor
+    font-family TruenoRoundBd
+    font-size 70px
+
+  &__subtitle
+    color #ff7373
+    font-family TruenoRoundBd
+    font-size 50px
+
+  &__text
+    color #8a8784
+    font-family TruenoLt
+    font-size 16px  
+  
+  &__button
+    max-width 255px
+    height 48px
+    background-color #ff7373
+    color #fff
+    font-size 16px
+    text-align center
+    padding-top 10px
+    
+    &:hover
+      box-shadow 0 10px 25px rgba(0,0,0,0.2)
