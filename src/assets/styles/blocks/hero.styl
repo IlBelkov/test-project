@@ -40,6 +40,7 @@
     color #8a8784
     font-family TruenoLt
     font-size 16px  
+    padding-bottom 37px
   
   &__button
     max-width 255px
@@ -49,6 +50,160 @@
     font-size 16px
     text-align center
     padding-top 10px
+    cursor pointer
     
     &:hover
       box-shadow 0 10px 25px rgba(0,0,0,0.2)
+
+.collection
+  padding-top 50px
+
+  .container
+    display flex 
+    justify-content space-between
+
+.left-block
+  background url('../images/sneaker-collection1.png') no-repeat center
+  width 579px
+  height 540px
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  left 10px
+  position relative
+  margin-right 30px
+
+  &:after
+    content ''
+    width 29px
+    height 55px
+    background url('../images/dataile.png') no-repeat 100% 100%
+    top 226px
+    left -19px
+    position absolute  
+
+  &__title
+    color #ffffff
+    font-family TruenoLt
+    font-size 30px
+    font-weight 400
+    position relative
+    line-height 30px
+
+    &:after
+      content ''
+      width 32px
+      height 48px
+      background url('../images/small-logo.png') no-repeat center
+      top 10px
+      left -90px
+      position absolute
+
+  &__subtitle  
+    color #4bd8cd
+    font-family TruenoBd
+    font-size 30px
+    font-weight 400
+    padding-bottom 339px
+
+  &__button
+    width 211px
+    height 48px
+    background-color #4bd8cd
+    color #000000
+    font-family TruenoBd
+    font-size 16px
+    font-weight 400
+    line-height 26px
+    border none
+
+.right-block
+  display flex
+  flex-wrap wrap
+  width 547px
+  position relative
+
+  H3
+    font-family TruenoLt
+    font-size 30px
+    font-weight 400
+    line-height 30px
+    text-transform none 
+    margin 0px
+
+  SPAN
+    font-family TruenoBd
+    font-size 30px
+    font-weight 400
+    line-height 40px
+
+
+  &__item:nth-of-type(1)
+    background url('../images/sneaker-collection2.png') no-repeat center
+    width 547px
+    height 277px
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+    padding-left 150px
+    position relative
+    top -22px
+
+    H3 
+      color #fff
+
+    SPAN 
+      color #fff
+      padding-bottom 30px
+
+    BUTTON
+      width 145px
+      height 48px
+      background-color redColor
+      color #ffffff
+      font-family TruenoBd
+      font-size 16px
+      font-weight 400
+      line-height 26px
+      border none
+
+  &__item:nth-of-type(2)
+    background url('../images/sneaker-collection3.png') no-repeat center
+    width 255px
+    height 255px
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+    position relative
+    bottom -4px
+    left 9px
+
+    H3 
+      color #fff
+      padding-top: 100px;
+
+    SPAN 
+      color #ff7373
+
+  &__item:nth-of-type(3)
+    background url('../images/sneaker-collection4.png') no-repeat center
+    width 255px
+    height 255px
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+    position relative
+    bottom -4px
+    right -37px
+
+    H3 
+      color #6b7072
+
+    SPAN 
+      color #fff
+      padding-bottom: 100px;
+
