@@ -207,3 +207,202 @@
       color #fff
       padding-bottom: 100px;
 
+.catalog
+  padding-top 100px
+
+.title
+  display flex
+  justify-content center
+  color #bdb9b5
+  font-family TruenoLt
+  text-transform: uppercase;
+  align-items center
+  padding-bottom 50px
+
+  &__item:not(:last-child)
+    padding-right 30px
+
+  &__item--active
+    color redColor
+    font-family TruenoBd
+
+.catalog-block
+  display flex 
+  justify-content space-between
+  flex-wrap wrap
+  align-items center
+
+.cart
+  width 255px
+  height 350px
+  border 1px solid #e0dfde
+  background-color #ffffff
+  margin-bottom 30px
+  position relative
+
+  &__cost
+    color #8a8784
+    font-family TruenoLt
+    font-size 24px
+    font-weight 400
+    line-height 26px
+    position absolute
+    z-index 22
+    top 27px
+    left 30px
+
+  &__cost--sale
+    color #ff7373 
+
+  &__cost-sale
+    color #8a8784
+    font-size 16px
+    text-decoration line-through
+    position absolute
+    top 55px
+    left 30px
+  
+  &__image
+    width 200px
+    height 200px
+    margin 27px 24px 0px 28px
+
+  &__text
+    position absolute
+    margin-left 29px
+    bottom 30px
+  
+  &__gender
+    color #8a8784
+    font-family TruenoBd
+    font-size 16px
+    font-weight 400
+    line-height 26px
+
+  &__title
+    font-family TruenoLt
+  
+  &__number
+    color #bdb9b5
+    font-family TruenoLt
+    font-size 13px
+
+  &__sale
+    position absolute
+    color #fff
+    font-family TruenoBd
+    font-size 16px
+    font-weight 400
+    line-height 26px
+    width 61px
+    height 28px
+    background-color #ff7373
+    top 23px
+    right 0
+    text-align center
+
+.brand
+  margin-top 100px
+  .container
+    max-width 1048px
+    display flex
+    justify-content space-between
+    align-items center
+
+.reviews
+  background url('../images/glenn-carstens-peters-203007.jpg.png') no-repeat 50%
+  background-size: cover;
+  height 570px
+  margin-top 103px
+
+.overlay
+  height 570px
+  background-color rgba(maroonColor, 0.9)
+  
+  &__text
+    background-color rgba(#fff,0.1)
+    color #ffffff
+    font-family TruenoLt
+    font-size 16px
+    font-weight 400
+    line-height 26px
+    padding 50px
+    text-align center
+    position relative
+    margin-top 50px
+
+    &:before
+      content ''
+      position absolute
+      border 20px solid transparent
+      border-bottom 20px solid rgba(#fff,0.1)
+      top -40px
+      left 50%
+      transform translateX(-50%)
+      
+.reviews-block
+  display flex 
+  justify-content center
+  text-align center
+
+  &__photo
+    border 2px solid #fff
+    border-radius 60%
+  
+  &__item
+    padding-top 102px
+
+  &__item:not(:last-child)
+    padding-right 50px
+
+  &__item:nth-of-type(odd)
+    opacity 0.3
+
+.news
+  margin-top 105px
+
+  &__title
+    text-align center
+    color #623232
+    font-family TruenoBd
+    font-size 30px
+    font-weight 400
+    text-transform uppercase
+    margin-bottom 50px
+
+  .container
+    display flex
+    justify-content space-between
+
+  &__item
+    width 350px
+    height 350px
+    position relative
+  
+  &__text
+    position absolute
+    color #ffffff
+    font-family TruenoLt
+    font-size 16px
+    font-weight 400
+    line-height 26px
+    bottom 30px
+    left 30px
+      
+  &__date
+    font-family TruenoBd
+
+  &__count
+    position relative
+    font-size 13px
+    color #ff7373
+    left 30px
+
+    &:after
+      position absolute
+      content ''
+      background url('../images/comments.png') no-repeat center 
+      top 4px
+      left -30px
+      width 20px
+      height 20px
