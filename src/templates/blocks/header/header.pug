@@ -11,15 +11,16 @@ mixin header()
 
         +b.options-right
           +e.item
-            +e.SPAN.cost $465.00
+            +e.A(href="#").cost $465.00
             +e.SPAN.items 4 items
-          +e.login Login
-          +e.register Register
+          +e.A(href="#").login Login
+          +e.A(href="#").register Register
      
     +b.SECTION.menu
       .container
         +b.logo
-          +e.IMG(src='../../../assets/images/logo.png').logo
+          +e.A(href="#").link
+            +e.IMG(src='../../../assets/images/logo.png').logo
         
         +b.nav
           +e.A(href="#").item Home

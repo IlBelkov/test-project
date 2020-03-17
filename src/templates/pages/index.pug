@@ -29,11 +29,12 @@ block content
               SPAN.subtitle NEW ARRIVALS
               BUTTON.button DISCOVER
             +e.item
-              H3.title Best for
-              SPAN.subtitle ATHLETES
-            +e.item
-              H3.title Feel 
-              SPAN.subtitle PREMIUM
+              +e.elem
+                H3.title Best for
+                SPAN.subtitle ATHLETES
+              +e.elem
+                H3.title Feel 
+                SPAN.subtitle PREMIUM
 
     +b.SECTION.catalog.section
       .container
@@ -138,28 +139,25 @@ block content
               +e.IMG(src='../../assets/images/face.png').photo
               +e.name Sandra Jensen
               +e.IMG(src='../../assets/images/stars (3).png').stars
-
-          +e.text “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+          +e.container
+            +e.text “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
     
     +b.SECTION.news.section
       +e.title LATEST NEWS
       .container
-        +e.item
-          +e.IMG(src="../../assets/images/news (1).png").image
+        +e.item-one
           +e.text
             +e.date DEC 27, 2017
             +e.article Lorem ipsum dolor sit amet #[br] consectetur adipiscing elit
             +e.count 24 Comments   
 
-        +e.item
-          +e.IMG(src="../../assets/images/news (3).png").image
+        +e.item-two
           +e.text
             +e.date DEC 27, 2017
             +e.article Lorem ipsum dolor sit amet #[br] consectetur adipiscing elit
             +e.count 24 Comments   
 
-        +e.item
-          +e.IMG(src="../../assets/images/news (2).png").image
+        +e.item-three
           +e.text
             +e.date DEC 27, 2017
             +e.article Lorem ipsum dolor sit amet #[br] consectetur adipiscing elit
