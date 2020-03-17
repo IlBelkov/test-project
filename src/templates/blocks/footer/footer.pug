@@ -1,3 +1,82 @@
 mixin footer()
   +b.FOOTER.footer
-    .container
+    +b.SECTION.advantages.section
+      .container
+        +e.item
+          +e.IMG(src="../../../assets/images/advantages (3).png").image
+          +e.text Free Shipping #[br] in Europe
+        +e.item
+          +e.IMG(src="../../../assets/images/advantages (2).png").image
+          +e.text Money Back #[br] Guarantee
+        +e.item
+          +e.IMG(src="../../../assets/images/advantages (1).png").image
+          +e.text 24/7 Customer #[br] Support
+        +e.item
+          +e.IMG(src="../../../assets/images/advantages (6).png").image
+          +e.text Lowest Prices #[br] Guaranteed
+        +e.item
+          +e.IMG(src="../../../assets/images/advantages (5).png").image
+          +e.text Exclusive Items for #[br] Sportshold
+        +e.item
+          +e.IMG(src="../../../assets/images/advantages (4).png").image
+          +e.text 5-Day Delivery #[br] in Europe
+        
+    +b.SECTION.information.section
+      .container
+        +e.item
+          +e.elem.inf-phone
+            +e.title.small-height Call Us
+            +e.A(href='tel:0 (1234) 567 890').elem.small-link 0 (1234) 567 890
+          +e.elem.inf-email
+            +e.title.small-height Email Us
+            +e.A(href='email:hello@sportshold.com').elem.small-link hello@sportshold.com    
+          +e.elem.inf-map
+            +e.title.small-height Address
+            +e.A(href='email:hello@sportshold.com').elem.small-link 40 Baria Sreet 133/2, NY, US
+
+        +e.item 
+          +e.title navigation
+          +e.A(href="#").elem Home
+          +e.A(href="#").elem About Us
+          +e.A(href="#").elem Latest News
+          +e.A(href="#").elem Reviews
+          +e.A(href="#").elem Brands
+
+        +e.item
+          +e.title Categories
+          +e.A(href="#").elem Men
+          +e.A(href="#").elem Women
+          +e.A(href="#").elem Children
+          +e.A(href="#").elem Baby
+          +e.A(href="#").elem Accessories
+        
+        +e.item
+          +e.title Sales
+          +e.A(href="#").elem New Arrivals
+          +e.A(href="#").elem Most Popular
+          +e.A(href="#").elem Top Picks
+          +e.A(href="#").elem Outlet
+    
+        +e.item
+          +e.title Support
+          +e.A(href="#").elem Shipping & Delivery
+          +e.A(href="#").elem Return Policy
+          +e.A(href="#").elem Terms of Service
+          +e.A(href="#").elem Privacy Policy
+          +e.A(href="#").elem Contact Us
+    
+    +b.SECTION.deep-footer.section
+      .container
+        +e.IMG(src='../../../assets/images/logo.png').logo
+
+        +e.copy © 2017 Sportshold. All rights reserved.
+
+        +e.social
+          +e.A(href="#").link
+            +e.IMG(src='../../../assets/images/twitter.png').image
+          +e.A(href="#").link
+            +e.IMG(src='../../../assets/images/fb.png').image
+          +e.A(href="#").link
+            +e.IMG(src='../../../assets/images/pinterest.png').image    
+          +e.A(href="#").link
+            +e.IMG(src='../../../assets/images/youtube.png').image 
