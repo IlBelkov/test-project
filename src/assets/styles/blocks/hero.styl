@@ -351,12 +351,20 @@
   
   &__item
     padding-top 102px
+    padding-right 50px
 
   &__item:not(:last-child)
-    padding-right 50px
+    padding-left: 10px;
 
   &__item:nth-of-type(odd)
     opacity 0.3
+  
+  &__name
+    color #ffffff
+    font-family TruenoBd
+    font-size 16px
+    font-weight 400
+    line-height 26px
 
 .news
   margin-top 105px
@@ -406,3 +414,50 @@
       left -30px
       width 20px
       height 20px
+
+.letter
+  margin-top 100px
+  background-color #ff7373
+  .container
+    height 200px
+    display flex 
+    justify-content space-between
+    align-items center
+
+  &__question-block
+    position relative
+    left 90px
+    &:after
+      content ''
+      position absolute
+      width 60px
+      height 42px
+      background url('../images/letter.png') no-repeat center 
+      top 15px
+      left -90px
+
+  &__titile
+    color #ffffff
+    font-family TruenoBd
+    font-size 30px
+    font-weight 400
+    text-transform uppercase
+
+  &__subtitle
+    color #ffffff
+    font-family TruenoLt
+    font-size 16px
+    font-weight 400
+    line-height 26px
+  
+  &__button
+    width 211px
+    height 48px
+    background-color #623232
+    color #ffffff
+    font-family TruenoBd
+    font-size 16px
+    font-weight 400
+    line-height 26px
+    text-transform uppercase
+    border none
