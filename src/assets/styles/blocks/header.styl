@@ -31,7 +31,7 @@
     padding-right 21px
     position relative
 
-    &:after
+    &::after
       content ''
       width 20px
       height 20px
@@ -47,12 +47,27 @@
   &__login
     color #ffffff
     padding 16px 20px 15px 20px
+    border none
     border-left 1px solid rgba(255, 255, 255, 0.1)
-     
+    cursor pointer
+    background-color maroonColor
+
+    &:hover
+      background-color maroonColor
+      border none
+    &:active
+      background-color maroonColor
+      border none
+    &:focus
+      background-color maroonColor
+      border none
+
   &__register
     color #ffffff
     padding 16px 20px 15px 20px
     background-color #ff7373
+    cursor pointer
+    border none
     
 .menu
   background-color redColor

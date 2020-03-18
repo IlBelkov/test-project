@@ -401,22 +401,16 @@
     justify-content space-between
 
   &__item-one
-    width 350px
-    height 350px
+    max-width 350px
     position relative
-    background url("../../assets/images/news (1).png") center no-repeat
   
   &__item-two
-    width 350px
-    height 350px
+    max-width 350px
     position relative
-    background url("../../assets/images/news (3).png") center no-repeat
   
   &__item-three
-    width 350px
-    height 350px
+    max-width 350px
     position relative
-    background url("../../assets/images/news (2).png") center no-repeat
   
   &__text
     position absolute
@@ -436,7 +430,11 @@
     font-size 13px
     color #ff7373
     left 30px
-
+    
+    &:hover
+      text-decoration underline
+      cursor pointer
+      
     &:after
       position absolute
       content ''
